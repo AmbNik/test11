@@ -36,11 +36,11 @@ jobs:
                 DB_USERNAME: ${{ secrets.DB_USERNAME }}
                 DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
                 MYSQL_ATTR_SSL_CA: /etc/ssl/certs/ca-certificates.crt
-                timeout-minutes: 10
+                timeout-minutes: 100
 
             - name: Deploy to Vercel
               run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} --env APP_KEY=${{ secrets.APP_KEY }}
               env:
                 VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
                 VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
-              timeout-minutes: 15
+              timeout-minutes: 100
