@@ -29,7 +29,7 @@ jobs:
           done
         env:
           DB_CONNECTION: pgsql
-          DB_HOST: dpg-clgsgv6g1b2c73aaoarg-a
+          DB_HOST: dpg-clgsgv6g1b2c73aaoarg-a.render.com
           DB_PORT: 5432
           DB_DATABASE: ${{ secrets.DB_DATABASE }}
           DB_USERNAME: ${{ secrets.DB_USERNAME }}
