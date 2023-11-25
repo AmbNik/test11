@@ -29,7 +29,7 @@ jobs:
           done
         env:
           APP_ENV: production
-          DB_CONNECTION: postgresql
+          DB_CONNECTION: pgsql
           DB_HOST: ${{ secrets.DB_HOST }}
           DB_PORT: 5432
           DB_DATABASE: ${{ secrets.DB_DATABASE }}
