@@ -36,6 +36,7 @@ jobs:
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
         timeout-minutes: 100  # Перенесено на уровень выше блока env
 
+
       - name: Deploy to Vercel
         run: vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }} --env APP_KEY=${{ secrets.APP_KEY }}
         env:
