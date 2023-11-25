@@ -29,9 +29,9 @@ jobs:
           done
         env:
           APP_ENV: production
-          DB_CONNECTION: mysql
+          DB_CONNECTION: postgresql
           DB_HOST: ${{ secrets.DB_HOST }}
-          DB_PORT: 3306
+          DB_PORT: 5432
           DB_DATABASE: ${{ secrets.DB_DATABASE }}
           DB_USERNAME: ${{ secrets.DB_USERNAME }}
           DB_PASSWORD: ${{ secrets.DB_PASSWORD }}
